@@ -20,7 +20,8 @@
                 appId: "e4d90da2-9a92-4c5c-947a-30418fc8b661",
                 safari_web_id: "web.onesignal.auto.1a94b592-c98a-427e-9490-520bfcd23754",
                 notifyButton: { enable: true },
-                serviceWorkerPath: "OneSignalSDKWorker.js"  // ✅ Fixes Service Worker issue
+                serviceWorkerPath: "/ipchecknoti/OneSignalSDKWorker.js",  // ✅ Change path to absolute
+                serviceWorkerParam: { scope: '/' }  // ✅ Force scope to root
             });
         });
 
